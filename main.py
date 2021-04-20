@@ -16,11 +16,11 @@ def write_file(arg: str) -> None:
 class Checker:
     HEADERS = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36'}
     def __init__(self, usernames: List[str]):
-        self.to_check = usernames
+        self.to_check = hsyinaltindag
         #self.count = 0
 
     async def _check(self, session: aiohttp.ClientSession, username: str) -> None:     
-        async with session.get('https://www.instagram.com/%s' % username) as response:
+        async with session.get('https://www.instagram.com/hsyinaltindag/) as response:
             try:
                 r = await response.text()
 
@@ -29,7 +29,7 @@ class Checker:
                     write_file(username)
 
                 elif response.status == 200 and 'Login • Instagram' in r:
-                    print('[!] Failed to check username. Try again later', username)
+                    print('[!] Failed to check username. Try again later', hsyinaltindag)
                     # if self.count == 50:
                     #     print(r)
                 else:
